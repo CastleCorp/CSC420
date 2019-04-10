@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>List Applicants</title>
+	
+	<link type="text/css" 
+	rel="stylesheet" 
+	href="style.css" />
+</head>
+
+<body class="container">
+
+	<h1>Applicant Manager</h1>
+	
+	<input id="addButton" type="button" value="Add Applicant"
+		onclick="window.location.href='showFormForAdd'; return false;"
+		class="add-button"
+	/>
+
+  <br><br>
+	
+	<table class="applicant">
+	
+	<tr>
+		<th>id</th>
+		<th>Name</th>
+		<th>Position</th>
+		<th>Salary</th>
+		<th>Location</th>
+	</tr>
+		<tr>
+			<td> ${tempApplicant.id} </td>
+			<td> ${tempApplicant.name} </td>
+			<td> ${tempApplicant.position} </td>
+			<td> $${tempApplicant.salary} </td>
+			<td> ${tempApplicant.location} </td>
+		</tr>
+    <tr>
+			<td> ${tempApplicant.id} </td>
+			<td> ${tempApplicant.name} </td>
+			<td> ${tempApplicant.position} </td>
+			<td> $${tempApplicant.salary} </td>
+			<td> ${tempApplicant.location} </td>
+		</tr>
+	
+	</table>
+
+</body>
+
+</html>
